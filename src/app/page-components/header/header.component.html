@@ -1,0 +1,55 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src="/logo.png" class="logo">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto"  *ngIf="IfSellerLoggedIn">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="./seller-home">Home <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="./product/add-product">Add Product <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="./product/manage-products">Manage Products <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="./category">Manage Category <span class="sr-only"></span></a>
+        </li>
+      </ul>
+      <ul class="navbar-nav mr-auto"  *ngIf="!IfSellerLoggedIn">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="">Home <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="./product/products">Products <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="./seller-login" >Seller Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="./seller-login">
+            User Login
+          </a>
+        </li>
+        <form class="form-inline my-2 my-lg-0" #serchForm = "ngForm" (ngSubmit)="search(serchForm)">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        <li class="nav-item" *ngIf="false">
+            <a class="nav-link" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i><sup>0</sup></a>
+          </li>
+          
+      </ul>
+     
+    </div>
+
+    <ul class="nav navbar-nav navbar-right" *ngIf="IfSellerLoggedIn">
+      <li><a (click)="logout()">Logout <span class="sr-only"></span></a></li>
+      <li> <a  href="./seller-home">{{sellerDetails.name | titlecase}}</a></li>
+    </ul>
+  </nav>
+  

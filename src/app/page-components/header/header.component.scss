@@ -1,0 +1,26 @@
+.form-control{
+    display: inline;
+    width: 70%;
+    margin-right: 0.4rem;
+}
+.logo {
+    width: 10%;
+    margin-left: 10px;
+}
+
+
+.nav.navbar-nav.navbar-right li{
+    padding-right: var(--bs-navbar-nav-link-padding-x);
+    padding-left: var(--bs-navbar-nav-link-padding-x);
+}
+
+.nav.navbar-nav.navbar-right li a{
+    cursor: pointer;
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    color: var(--bs-nav-link-color);
+    text-decoration: none;
+    background: none;
+    border: 0;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}

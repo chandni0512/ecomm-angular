@@ -1,0 +1,36 @@
+<div class="products-div"> 
+    <h1 class="product-heading">Products</h1>
+    <div class="card-deck row">
+
+        <div class="col-xs-12 col-sm-6 col-md-4" *ngFor="let product of products">
+        <!-- Card -->
+        <div class="card">
+      
+          <!--Card image-->
+          <div class="view overlay">
+            <img class="card-img-top" src="{{product.imageURL}}" alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+      
+          <!--Card content-->
+          <div class="card-body">
+      
+            <!--Title-->
+            <h4 class="card-title">{{product.productName}}</h4>
+            <span class="product-price">{{currencyFormatter(product.price)}}</span>
+            <!--Text-->
+            <p class="card-text">{{product.description}}</p>
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <button type="button" class="btn btn-warning pull-right">Add to cart</button>
+      
+          </div>
+      
+        </div>
+        <!-- Card -->
+        </div>      
+        
+      </div>
+      <!-- Card deck -->
+</div>

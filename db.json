@@ -1,0 +1,214 @@
+{
+  "seller": [
+    {
+      "id": "a258",
+      "name": "mukesh heeee",
+      "Email": "mukeshh@gmail.com",
+      "Password": "Password@123"
+    },
+    {
+      "id": "6527",
+      "name": "urfi javed",
+      "Email": "urfi.javed@gmail.com",
+      "Password": "urfi.javed"
+    },
+    {
+      "id": "8b07",
+      "name": "rakhi sawant ",
+      "Email": "rakhi.sawant@gmail.com",
+      "Password": "rakhiswant"
+    },
+    {
+      "id": "796b",
+      "name": "avinash rajpoot",
+      "Email": "avinash.rajpoot@gmail.com",
+      "Password": "avinash"
+    },
+    {
+      "id": "d359",
+      "name": "manish sharma",
+      "Email": "manish.sharma@gmail.com",
+      "Password": "manish"
+    },
+    {
+      "id": "cd4a",
+      "name": "tanvi vats",
+      "Email": "tanvi.vats@gmail.com",
+      "Password": "tanvi"
+    },
+    {
+      "id": "bf61",
+      "name": "khushi varshney",
+      "Email": "khushi.varshney@gmail.com",
+      "Password": "khushi"
+    },
+    {
+      "id": "7bed",
+      "name": "sugandha gandharv",
+      "Email": "sugandha.gandharv@gmail.com",
+      "Password": "sugandha"
+    },
+    {
+      "id": "4f69",
+      "name": "ioyroiwyio",
+      "email": "uygwyge@gmail.com",
+      "password": "ioyroiwyio",
+      "confirmPassword": "ioyroiwyio"
+    },
+    {
+      "id": "7680",
+      "name": "iuiuerer",
+      "email": "tuytyutuytuytyutuygii",
+      "password": "iuiuerer",
+      "confirmPassword": "iuiuerer"
+    },
+    {
+      "id": "d20a",
+      "name": "iugfuiie",
+      "email": "rguweyureu@gmail.com",
+      "password": "iugfuiie",
+      "confirmPassword": "iugfuiie"
+    },
+    {
+      "id": "4aed",
+      "name": "8hugudygwu",
+      "email": "jgyuguyguw",
+      "password": "8hugudygwu",
+      "confirmPassword": "8hugudygwu"
+    },
+    {
+      "id": "2756",
+      "name": "euytwytw",
+      "email": "weywtyuiuhrei",
+      "password": "euytwytw",
+      "confirmPassword": "euytwytw"
+    }
+  ],
+  "products": [
+    {
+      "id": "3d19",
+      "productName": "Micro wave",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "price": "17000",
+      "category": "electronics",
+      "imageURL": "microwave.jpg"
+    },
+    {
+      "id": "35ad",
+      "productName": "Iphone 7 white",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "price": "25000",
+      "category": "electronics",
+      "imageURL": "iphone.jpg"
+    },
+    {
+      "id": "e6c0",
+      "productName": "Iphone 14 White 521GB",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "price": "54000",
+      "category": "electronics",
+      "imageURL": "iphone.jpg"
+    },
+    {
+      "id": "a330",
+      "productName": "samsung black microwave",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "price": "10000",
+      "category": "electronics",
+      "imageURL": "microwave.jpg"
+    },
+    {
+      "id": "4b31",
+      "productName": "Flower Pot ceramic white",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "price": "2000",
+      "category": "homeDecor",
+      "imageURL": "teaPot.jpg"
+    },
+    {
+      "id": "d531",
+      "productName": "wall hanging Rope wooden ",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "price": "800",
+      "category": "homeDecor",
+      "imageURL": "wallHanging.jpg"
+    },
+    {
+      "id": "2a11",
+      "productName": "women sandals ",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "price": "1200",
+      "category": "footware",
+      "imageURL": "sandlesFootware.jpg"
+    },
+    {
+      "id": "5bc0",
+      "productName": "men formal shoes",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "price": "1500",
+      "category": "footware",
+      "imageURL": "menFootware.jpg",
+      "sellerId": "d359"
+    }
+  ],
+  "categories": [
+    {
+      "id": "bc4e",
+      "categoryName": "Electronics",
+      "categoryType": "category",
+      "sellerId": "d359"
+    },
+    {
+      "id": "5fe5",
+      "categoryName": "Fashion",
+      "categoryType": "category",
+      "sellerId": "d359"
+    },
+    {
+      "id": "565a",
+      "categoryName": "Home Decor",
+      "categoryType": "category",
+      "sellerId": "d359"
+    },
+    {
+      "id": "9331",
+      "categoryName": "kitchen ware",
+      "categoryType": "category",
+      "sellerId": "d359"
+    },
+    {
+      "id": "c573",
+      "categoryName": "mobile accesseroies",
+      "categoryType": "category",
+      "sellerId": "d359"
+    },
+    {
+      "id": "30e6",
+      "categoryType": "category",
+      "category": "",
+      "categoryName": "children section",
+      "sellerId": "d359"
+    },
+    {
+      "id": "0713",
+      "categoryType": "sub-category",
+      "category": null,
+      "categoryName": "Phone",
+      "sellerId": "d359"
+    },
+    {
+      "id": "2975",
+      "categoryType": "sub-category",
+      "category": "category.id",
+      "categoryName": "Shoes",
+      "sellerId": "d359"
+    },
+    {
+      "id": "2084",
+      "categoryType": "sub-category",
+      "category": "category.id",
+      "categoryName": "Clock",
+      "sellerId": "d359"
+    }
+  ]
+}

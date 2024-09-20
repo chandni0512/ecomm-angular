@@ -1,0 +1,22 @@
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <h1 class="login-heading">Login Seller!!</h1>
+        <div *ngIf="authError" class="alert alert-danger" role="alert">
+          {{authError}}
+        </div>
+        <form #sellerSignup = "ngForm" class="needs-validation" (ngSubmit)="sellerLogin(sellerSignup)" novalidate>
+            <div class="form-group">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" ngModel id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" ngModel id="password" name="password" placeholder="Password" required>
+              <small id="emailHelp" class="form-text text-muted">We'll never share your password with anyone else.</small>
+            </div>
+            <a class="nav-link link-primary signup-link" routerLink="../seller-auth">Don't have an account!!</a>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+    </div>
+   
+</div>

@@ -1,0 +1,50 @@
+
+<div class="products-div">
+  <button type="button" class="btn btn-primary pull-right" style="float: right;" routerLink="product/add-product">Add products</button>
+  <div class="mat-elevation-z8">
+    <div *ngIf="alertMessage" class="alert alert-success" role="alert">
+        {{alertMessage}}
+      </div>
+    <table mat-table [dataSource]="dataSource">
+  
+      <!-- Position Column -->
+      <ng-container matColumnDef="s.no">
+        <th mat-header-cell *matHeaderCellDef> No. </th>
+        <td mat-cell *matCellDef="let element;let i = index"> {{i + 1}} </td>
+      </ng-container>
+  
+      <!-- Name Column -->
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Name </th>
+        <td mat-cell *matCellDef="let element"> {{element.productName}} </td>
+      </ng-container>
+   <!-- Name Column -->
+   <ng-container matColumnDef="imageURL">
+    <th mat-header-cell *matHeaderCellDef> imageURL </th>
+    <td mat-cell *matCellDef="let element"  class="img-column"> <img src="{{element.imageURL}}" class="img-list"> </td>
+  </ng-container>
+      <!-- Weight Column -->
+      <ng-container matColumnDef="price">
+        <th mat-header-cell *matHeaderCellDef> Price </th>
+        <td mat-cell *matCellDef="let element">{{currencyFormatter(element.price)}}</td>
+      </ng-container>
+  
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="category">
+        <th mat-header-cell *matHeaderCellDef> Category </th>
+        <td mat-cell *matCellDef="let element">  {{element.category}}  </td>
+      </ng-container>
+      <ng-container matColumnDef="actions">
+        <th mat-header-cell *matHeaderCellDef> Actions </th>
+        <td mat-cell *matCellDef="let element">  <i class="fa fa-edit" title="Edit" (click)="onClickEdit(element.id)"  ></i> <i class="fa fa-trash actionIcons" (click)="openModal(element.id)" title="Delete"></i></td>
+      </ng-container>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  
+    <mat-paginator [pageSizeOptions]="[5, 10, 20]"
+                   showFirstLastButtons
+                   aria-label="Select page of product">
+    </mat-paginator>
+  </div>
+</div>
